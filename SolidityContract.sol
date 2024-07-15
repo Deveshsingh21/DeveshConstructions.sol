@@ -47,7 +47,7 @@ contract DeveshBuildersAndEarthLifters {
         emit BalanceUpdated(msg.sender, balances[msg.sender]);
     }
 
-    function purchaseItem(uint256 Equipment_Code) external {
+    function rentItem(uint256 Equipment_Code) external {
     string memory itemName = EquipmentCodes[Equipment_Code];
     uint256 Equipment_Price = EquipmentPrices[Equipment_Code];
     uint256 balance = balances[msg.sender];
